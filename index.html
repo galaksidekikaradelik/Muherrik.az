@@ -1,0 +1,203 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mühərrik.az | Əsas səhifə</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="C:\Users\User\Desktop\Masin elan sehifesi\Car\WhatsApp Image 2025-12-23 at 21.52.04.jpeg" type="image/png">
+
+   
+
+</head>
+<body>
+    <header>
+        
+
+        
+        <div class="main-header">
+            <div class="logo">
+                <a href="index.html"><h1>Mühərrik.az</h1></a>
+            </div>
+
+            <nav class="main-menu">
+                <a href="index.html">Əsas səhifə</a>
+                <a href="rentacar.html">Rent a car</a>
+                <a href="elan.html">Elan yerləşdir</a>
+                <div class="dropdown">
+                    <span class="dropdown-title">Avtohissələr</span>
+                    <div class="dropdown-content">
+                        <a href="xarici.html">Xarici</a>
+                        <a href="daxili.html">Daxili</a>
+                        <a href="aksesuar.html">Aksesuar</a>
+                    </div>
+                </div>
+                <a href="haqqimizda.html">Haqqımızda</a>
+                <a href="elaqe.html">Əlaqə</a>
+                <a href="hesab.html">Hesabım</a>
+            </nav>
+        </div>
+
+        
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="🔍 Maşın axtar...">
+            
+        </div>
+    </header>
+        
+        
+    
+    <div class="cars">
+        <div class="car-card">
+            <img src="Car\BMW.jpg" alt="">
+            <h2>32.600 manat</h2>
+            <h3>BMW 528</h3>
+            <p>2015, 2.0L, 135.000km</p>
+            <button>Ətraflı bax</button>
+        </div>
+        <div class="car-card">
+            <img src="Car\byd.jpg" alt="">
+            <h2>22.200 manat</h2>
+            <h3>BYD Destroyer 05</h3>
+            <p>2025, 1.5L, 0.000km</p>           
+            <button>Ətraflı bax</button>
+        </div>
+        <div class="car-card">
+            <img src="Car\changan.jpg" alt="">
+            <h2>29.999 manat</h2>
+            <h3>Changan Qiyuan Q05</h3>
+            <p>2025, 1.5L, 0.000km</p>
+            <button>Ətraflı bax</button>
+        </div>
+        <div class="car-card">
+            <img src="Car\citroen.jpg" alt="">
+            <h2>11.900 manat</h2>
+            <h3>Citroen C-Flysee</h3>
+            <p>2015, 1.6L, 110.408km</p>
+            <button>Ətraflı bax</button>
+        </div>
+        <div class="car-card">
+            <img src="Car\honda.jpg" alt="">
+            <h2>41.500 manat</h2>
+            <h3>Honda CR-V</h3>
+            <p>2022, 2.0L, 67.600km</p>
+            <button>Ətraflı bax</button>
+        </div>
+        <div class="car-card">
+            <img src="Car\hyundai.jpg" alt="">
+            <h2>20.500 manat</h2>
+            <h3>Hyundai Elantra</h3>
+            <p>2015, 1.6L, 210.000km</p>
+            <button>Ətraflı bax</button>
+        </div>
+        <div class="car-card">
+            <img src="Car\mers.jpg" alt="">
+            <h2>47.090 manat</h2>
+            <h3>Mercedes GL Matic</h3>
+            <p>2013, 4.7L, 144.000km</p>
+            <button>Ətraflı bax</button>
+        </div>
+        <div class="car-card">
+            <img src="Car\nissan.jpg" alt="">
+            <h2>30.900 manat</h2>
+            <h3>Nissan Magnite</h3>
+            <p>2025, 1.0L, 0.000km</p>
+            <button>Ətraflı bax</button>
+        </div>
+        <div class="car-card">
+            <img src="Car\peugeot.jpg" alt="">
+            <h2>7.500 manat</h2>
+            <h3>Peugeot 406</h3>
+            <p>2019, 1.7L, 134.000km</p>
+            <button>Ətraflı bax</button>
+        </div>
+        <div class="car-card">
+            <img src="Car\porsche.jpg" alt="">
+            <h2>42.500 manat</h2>
+            <h3>Porsche Panamera Turbo</h3>
+            <p>2020, 4.8L, 11.900km</p>
+            <button>Ətraflı bax</button>
+        </div>
+        <div class="car-card">
+            <img src="Car\toyota.jpg" alt="">
+            <h2>39.500 manat</h2>
+            <h3>Toyota Land Crusier Prado</h3>
+            <p>2020, 2.7L, 241.357km</p>
+            <button>Ətraflı bax</button>
+        </div>
+        <div class="car-card">
+            <img src="Car\kia.jpg" alt="">
+            <h2>49.000 manat</h2>
+            <h3>KIA K5</h3>
+            <p>2023, 2.0L, 28.000km</p>
+            <button>Ətraflı bax</button>
+        </div>
+        <p id="noResult" style="display:none; text-align:center; font-size:18px; margin:20px;">
+            Heç bir elan tapılmadı 😕
+        </p>
+
+    </div>
+    
+
+    
+
+    <div id="carModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <img id="modalImg" src="" alt="Maşın şəkli">
+                </div>
+                <div class="modal-right">
+                    <h2 id="modalPrice" class="modal-price"></h2>
+                    <h1 id="modalName" class="modal-name"></h1>
+                    
+                    <div class="modal-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">📅 İl:</span>
+                            <span id="modalYear" class="spec-value"></span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">⚙️ Mühərrik:</span>
+                            <span id="modalEngine" class="spec-value"></span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">🛣️ Gedilən yol:</span>
+                            <span id="modalMileage" class="spec-value"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-description">
+                        <h3>Ətraflı məlumat</h3>
+                        <p id="modalDescription"></p>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <button class="contact-btn">📞 Əlaqə saxla</button>
+                        <button class="favorite-btn">❤️ Seçilmişlərə əlavə et</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ads-container" id="adsContainer">
+        
+    </div>
+
+    
+    
+    
+    <script src="kateqoriya.js"></script>
+
+
+    <script src="script.js"></script>
+    <div class="footer">
+        <p>Muherrik.az</p>
+        <p>info@muherrik.az</p>
+        <p>+994 12 345 67 89</p>
+        <p>©2025</p>
+    </div>
+
+
+</body>
+</html>
