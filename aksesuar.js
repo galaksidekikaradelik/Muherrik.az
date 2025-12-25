@@ -181,7 +181,7 @@ document.querySelectorAll('.aksesuar-card button').forEach(button => {
             modalDescription.textContent = 'Ətraflı məlumat tezliklə əlavə olunacaq.';
         }
         
-        modal.style.display = 'flex';
+        modal.style.display = 'block';
         document.body.style.overflow = 'hidden';
     });
 });
@@ -206,4 +206,5 @@ modal.querySelector('.contact-btn').addEventListener('click', function() {
 
 modal.querySelector('.favorite-btn').addEventListener('click', function() {
     alert('Seçilmişlərə əlavə edildi! ❤️');
+
 });
