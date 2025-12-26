@@ -519,6 +519,7 @@ header {
   height: 100%;
   pointer-events: none;
   overflow: hidden;
+    z-index: 10000;
 }
 
 .snowflake {
@@ -535,4 +536,5 @@ header {
     transform: translateY(110vh);
   }
 }
+
 
