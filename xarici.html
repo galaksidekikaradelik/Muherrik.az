@@ -142,7 +142,25 @@
     
     <script src="kateqoriya.js"></script>
     <script src="xarici.js"></script>
+
+
+    <script>
+        const snowContainer = document.getElementById("snow");
+
+        for (let i = 0; i < 50; i++) {
+        const snowflake = document.createElement("div");
+        snowflake.className = "snowflake";
+        snowflake.innerHTML = "❄";
+
+        snowflake.style.left = Math.random() * 100 + "vw";
+        snowflake.style.animationDuration = 5 + Math.random() * 5 + "s";
+        snowflake.style.fontSize = 10 + Math.random() * 20 + "px";
+
+        snowContainer.appendChild(snowflake);
+        }
+    </script>
     
 </body>
 
 </html>
+
