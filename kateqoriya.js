@@ -87,7 +87,7 @@ function displayAdsForCategory(category) {
             <div class="no-ads-message">
                 <h3>😔 Hal-hazırda bu kateqoriyada elan yoxdur</h3>
                 <p>Birinci siz elan əlavə edin!</p>
-                <a href="index-elan.html" class="add-ad-link">Elan əlavə et</a>
+                <a href="elan.html" class="add-ad-link">Elan əlavə et</a>
             </div>
         `;
         return;
@@ -505,4 +505,5 @@ displayStyle.textContent = `
         }
     }
 `;
+
 document.head.appendChild(displayStyle);
